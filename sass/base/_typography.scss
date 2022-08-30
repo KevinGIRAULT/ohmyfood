@@ -9,3 +9,14 @@ $primary-color : #9356DC;
 $secondary-color : #FF79DA;
 $tertiary-color : #99E2D0;
 $background-color :  #F6F6F6;
+
+html {
+    // https://www.freecodecamp.org/news/override-root-font-size-for-a-better-user-experience/
+    // 62.5% of 16px is 10px #a11y
+    font-size: 62.5%;
+}
+
+body {
+    // 1.6 rem of 10px = 16px #a11y
+    font-size: 1.6rem;
+}
