@@ -5,10 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <title>À la française</title>
     </head>
     <body>
         <header role="banner">
+            <span class="fa-solid fa-arrow-left"></span>
             <img src="../images/logo/ohmyfood@2x.svg"
         alt="Logo de Ohmyfood!"
         srcset="../images/logo/ohmyfood.png 392w,
@@ -19,68 +21,95 @@
             <div>
                 <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
             </div>
-            <section >
-                <section class="">
-                    <h2>Entrée</h2>
+            <section class="menu">
+                <h1 class="menu__title"></h1>
+                <span class="fa-light fa-heart menu__heart"></span>
+                <section class="menu-part">
+                    <h2 class="menu-part__title">Entrée</h2>
+                    
                     <article>
                         <h1>Tartare de poulpe acidulé</h1>
-                        <p>Aux zestes d'orange</p>
+                        <p>Aux zestes d'orange</p> <!-- <detail> tag rather than <p> ? <Caption> ? Figcation/figure ? <small> ?-->
                         <span>25€</span>
                     </article>
-
                     <article>
-                        <h1>Velouté de légumes d'antan</h1>
-                        <p>Carotte, panais, topinambour</p>
-                        <span>35€</span>
+                        <div>
+                            <h1>Velouté de légumes d'antan</h1>
+                            <p>Carotte, panais, topinambour</p>
+                            <span>35€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
                     </article>
 
                     <article>
-                        <h1>Soupe à l'oignon</h1>
-                        <p>Revisitée</p>
-                        <span>20€</span>
-                    </article>
-                </section>
-
-                <section class="main-course">
-                    <h2>Plat</h2>
-                    <article>
-                        <h1>Coquilles Saint-Jacques</h1>
-                        <p>Accompagnées d'une purée de panais</p>
-                        <span>40€</span>
-                    </article>
-
-                    <article>
-                        <h1>Magret de canard</h1>
-                        <p>Et parmentier de pommes de terre</p>
-                        <span>35€</span>
-                    </article>
-
-                    <article>
-                        <h1>Pigeonneau d’Ille-et-Vilaine</h1>
-                        <p>Sur son lit de gnocchis aux légumes</p>
-                        <span>44€</span>
+                        <div>
+                            <h1>Soupe à l'oignon</h1>
+                            <p>Revisitée</p>
+                            <span>20€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
                     </article>
                 </section>
-                <section class="dessert">
-                    <h2>Dessert</h2>
+
+                <section class="menu-part">
+                    <h2 class="menu-part__title">Plat</h2>
                     <article>
-                        <h1>Pétales de violettes glacés</h1>
-                        <p>Et purée de noisettes</p>
-                        <span>18€</span>
+                        <div>
+                            <h1>Coquilles Saint-Jacques</h1>
+                            <p>Accompagnées d'une purée de panais</p>
+                            <span>40€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
                     </article>
 
                     <article>
+                        <div>
+                            <h1>Magret de canard</h1>
+                            <p>Et parmentier de pommes de terre</p>
+                            <span>35€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h1>Pigeonneau d’Ille-et-Vilaine</h1>
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                            <span>44€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
+                    </article>
+                </section>
+                <section class="menu-part">
+                    <h2 class="menu-part__title">Dessert</h2>
+                    <article>
+                        <div>
+                            <h1>Pétales de violettes glacés</h1>
+                            <p>Et purée de noisettes</p>
+                            <span>18€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
+                    </article>
+
+                    <article>
+                        <div>
                         <h1>Fondant au chocolat</h1>
                         <p>Revisité</p>
                         <span>22€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
                     </article>
 
                     <article>
-                        <h1>Millefeuille croustillant</h1>
-                        <p>Myrtilles et pâte d’amande</p>
-                        <span>23€</span>
+                        <div>
+                            <h1>Millefeuille croustillant</h1>
+                            <p>Myrtilles et pâte d’amande</p>
+                            <span>23€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
                     </article>
                 </section>
+                <button class="menu__ordering"></button>
             </section>
         </main>
 
