@@ -1,0 +1,9 @@
+.logo_image {
+    width: 44.27%;
+}
+
+.logo_image > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
