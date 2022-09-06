@@ -1,8 +1,12 @@
 .logo_image {
     width: 44.27%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .logo_image > img {
+    // display: block;
     object-fit: cover;
     height: 100%;
     width: 100%;
