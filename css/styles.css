@@ -100,6 +100,21 @@ header {
   margin: 10px 20px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.iDontKnowIsName {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+
 .logo_image {
   width: 44.27%;
   display: flex;
@@ -111,6 +126,10 @@ header {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+section.menu {
+  background-color: #F6F6F6;
 }
 
 /*# sourceMappingURL=styles.css.map */

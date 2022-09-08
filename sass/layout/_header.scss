@@ -4,3 +4,13 @@ header {
     align-items: center;
     margin: 10px 20px;
 }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.iDontKnowIsName {
+    display: flex;
+    justify-content: space-between;
+}
