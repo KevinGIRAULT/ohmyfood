@@ -91,6 +91,29 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: Roboto;
+}
+
+.menu__title {
+  font-family: shrikhand;
+  font-size: 2.5rem;
+}
+
+.menu-part__title {
+  text-transform: uppercase;
+  border-bottom: 1px solid #99E2D0;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+}
+
+footer > p {
+  font-family: shrikhand;
 }
 
 header {
@@ -100,36 +123,50 @@ header {
   margin: 10px 20px;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.iDontKnowIsName {
-  display: flex;
-  justify-content: space-between;
-}
-
 footer {
   background-color: #353535;
   color: white;
 }
 
-.logo_image {
-  width: 44.27%;
+.logo-container {
+  width: 150px;
   display: flex;
   margin-right: auto;
   margin-left: auto;
 }
-
-.logo_image > img {
+.logo-container > img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-section.menu {
+section.menu-container {
   background-color: #F6F6F6;
+  padding: 30px 15px 70px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 49px 49px 0 0;
+  margin-top: -54px;
+  z-index: 1;
+  position: relative;
+}
+section.menu-container > .menu__heart-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  display: flex;
+}
+article > div {
+  width: 100%;
+  background-color: white;
+  margin: 15px 0px;
+  border-radius: 10px;
+}
+
+.fa-check {
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=styles.css.map */

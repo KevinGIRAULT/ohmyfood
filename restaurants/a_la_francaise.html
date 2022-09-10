@@ -5,26 +5,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/styles.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
         <title>À la française</title>
     </head>
     <body>
         <header role="banner">
-            <a href="../index.html" title="Retour l'accueil" class="fa-solid fa-arrow-left"></a>
-            <div class="logo_image">
-                <img src="../images/logo/ohmyfood@2x.svg"
-                alt="Logo de Ohmyfood!"
-                srcset="../images/logo/ohmyfood.png 392w,
-                ../images/logo/ohmyfood@2x.svg 393w">
+            <a
+                href="../index.html"
+                title="Retour l'accueil"
+                class="fa-solid fa-arrow-left"
+            ></a>
+            <div class="logo-container">
+                <img
+                    src="../images/logo/ohmyfood@2x.svg"
+                    alt="Logo de Ohmyfood!"
+                    srcset="
+                        ../images/logo/ohmyfood.png    392w,
+                        ../images/logo/ohmyfood@2x.svg 393w
+                    "
+                />
             </div>
         </header>
 
         <main>
             <div>
-                <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
+                <img
+                    src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt=""
+                />
             </div>
-            <section class="menu">
-                <div class="iDontKnowIsName">
+            <section class="menu-container">
+                <div class="menu__heart-title">
                     <h1 class="menu__title">À la française</h1>
                     <span class="fa-regular fa-heart menu__heart"></span>
                 </div>
@@ -32,15 +46,19 @@
                     <h2 class="menu-part__title">Entrée</h2>
 
                     <article>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <p>Aux zestes d'orange</p> <!-- <detail> tag rather than <p> ? <Caption> ? Figcation/figure ? <small> ?-->
-                        <span>25€</span>
+                        <div>
+                            <h1>Tartare de poulpe acidulé</h1>
+                            <p>Aux zestes d'orange</p>
+                            <span class="price">25€</span>
+                        </div>
+                        <button class="fa-solid fa-check"></button>
                     </article>
+
                     <article>
                         <div>
                             <h1>Velouté de légumes d'antan</h1>
                             <p>Carotte, panais, topinambour</p>
-                            <span>35€</span>
+                            <span class="price">35€</span>
                         </div>
                         <button class="fa-solid fa-check"></button>
                     </article>
@@ -49,7 +67,7 @@
                         <div>
                             <h1>Soupe à l'oignon</h1>
                             <p>Revisitée</p>
-                            <span>20€</span>
+                            <span class="price">20€</span>
                         </div>
                         <button class="fa-solid fa-check"></button>
                     </article>
@@ -61,7 +79,7 @@
                         <div>
                             <h1>Coquilles Saint-Jacques</h1>
                             <p>Accompagnées d'une purée de panais</p>
-                            <span>40€</span>
+                            <span class="price">40€</span>
                         </div>
                         <button class="fa-solid fa-check"></button>
                     </article>
@@ -70,7 +88,7 @@
                         <div>
                             <h1>Magret de canard</h1>
                             <p>Et parmentier de pommes de terre</p>
-                            <span>35€</span>
+                            <span class="price">35€</span>
                         </div>
                         <button class="fa-solid fa-check"></button>
                     </article>
@@ -79,7 +97,7 @@
                         <div>
                             <h1>Pigeonneau d’Ille-et-Vilaine</h1>
                             <p>Sur son lit de gnocchis aux légumes</p>
-                            <span>44€</span>
+                            <span class="price">44€</span>
                         </div>
                         <button class="fa-solid fa-check"></button>
                     </article>
@@ -90,16 +108,16 @@
                         <div>
                             <h1>Pétales de violettes glacés</h1>
                             <p>Et purée de noisettes</p>
-                            <span>18€</span>
+                            <span class="price">18€</span>
                         </div>
                         <button class="fa-solid fa-check"></button>
                     </article>
 
                     <article>
                         <div>
-                        <h1>Fondant au chocolat</h1>
-                        <p>Revisité</p>
-                        <span>22€</span>
+                            <h1>Fondant au chocolat</h1>
+                            <p>Revisité</p>
+                            <span class="price">22€</span>
                         </div>
                         <button class="fa-solid fa-check"></button>
                     </article>
@@ -108,7 +126,7 @@
                         <div>
                             <h1>Millefeuille croustillant</h1>
                             <p>Myrtilles et pâte d’amande</p>
-                            <span>23€</span>
+                            <span class="price">23€</span>
                         </div>
                         <button class="fa-solid fa-check"></button>
                     </article>

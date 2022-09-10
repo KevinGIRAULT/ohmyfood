@@ -21,4 +21,27 @@ html {
 body {
     // 1.6 rem of 10px = 16px #a11y
     font-size: 1.6rem;
+    font-family: Roboto;
+}
+
+.menu__title {
+    font-family: shrikhand;
+    font-size: 2.5rem;
+}
+
+.menu-part__title {
+    text-transform: uppercase ;
+    border-bottom: 1px solid $tertiary-color;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+}
+
+footer > p {
+    font-family: shrikhand;
 }
