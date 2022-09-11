@@ -34,7 +34,14 @@ body {
     text-transform: uppercase ;
     // text-decoration: solid underline $tertiary-color 3px;
     // text-underline-offset: 1rem;
-    border-bottom: 3px solid $tertiary-color;
+    &::after {
+        //mettre dans un ::after les propriétés suivantes permettent que la boite du texte ai toujours la dimension du texte.
+        content: "";
+        display: block;
+        width: 4rem;
+        padding-top: 3px;
+        border-bottom: 3px solid $tertiary-color;
+      }
 }
 
 h1 {

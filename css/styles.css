@@ -102,6 +102,12 @@ body {
 .menu-part__title {
   display: inline;
   text-transform: uppercase;
+}
+.menu-part__title::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  padding-top: 3px;
   border-bottom: 3px solid #99E2D0;
 }
 
