@@ -30,8 +30,11 @@ body {
 }
 
 .menu-part__title {
+    display: inline;
     text-transform: uppercase ;
-    border-bottom: 1px solid $tertiary-color;
+    // text-decoration: solid underline $tertiary-color 3px;
+    // text-underline-offset: 1rem;
+    border-bottom: 3px solid $tertiary-color;
 }
 
 h1 {

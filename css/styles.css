@@ -100,8 +100,9 @@ body {
 }
 
 .menu-part__title {
+  display: inline;
   text-transform: uppercase;
-  border-bottom: 1px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
 }
 
 h1 {
@@ -140,6 +141,11 @@ footer {
   width: 100%;
 }
 
+.menu__heart {
+  font-size: 2.5rem;
+  padding-right: 2rem;
+}
+
 section.menu-container {
   background-color: #F6F6F6;
   padding: 30px 15px 70px;
@@ -153,6 +159,8 @@ section.menu-container {
 section.menu-container > .menu__heart-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 article {
