@@ -133,6 +133,19 @@ header {
 footer {
   background-color: #353535;
   color: white;
+  padding-left: 2em;
+}
+footer li:first-child::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f2e7";
+  margin-right: 1em;
+}
+footer li:nth-child(2)::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f4c4";
+  margin-right: 0.6em;
 }
 
 .logo-container {
@@ -171,12 +184,19 @@ section.menu-container > .menu__heart-title {
 
 article {
   display: flex;
+  margin: 1.5em 0px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 article > div {
   width: 100%;
   background-color: white;
-  margin: 15px 0px;
   border-radius: 10px;
+}
+article > div > div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .fa-check {

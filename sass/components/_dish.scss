@@ -1,0 +1,16 @@
+article {
+    display: flex;
+    margin: 1.5em 0px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    > div {
+        width: 100%;
+        background-color: $footer-text-color;
+        border-radius: 10px;
+        > div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
