@@ -1,17 +1,23 @@
 footer {
     background-color: $footer-bg;
     color: $footer-text-color;
-    padding-left: 2em;
-    li:first-child::before {
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        content: "\f2e7";
-        margin-right: 1em;
-    }
-    li:nth-child(2)::before {
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        content: "\f4c4";
-        margin-right: 0.6em;
+    padding: 2em;
+    line-height: 2em;
+    li {
+        &:nth-child(-n+2) {
+            font-weight: bold;
+        }
+        &:first-child::before {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            content: "\f2e7";
+            margin-right: 1em;
+        }
+        &:nth-child(2)::before {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            content: "\f4c4";
+            margin-right: 0.6em;
+        }
     }
 }

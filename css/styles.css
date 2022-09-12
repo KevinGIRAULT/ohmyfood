@@ -133,7 +133,11 @@ header {
 footer {
   background-color: #353535;
   color: white;
-  padding-left: 2em;
+  padding: 2em;
+  line-height: 2em;
+}
+footer li:nth-child(-n+2) {
+  font-weight: bold;
 }
 footer li:first-child::before {
   font-family: "Font Awesome 6 Free";
