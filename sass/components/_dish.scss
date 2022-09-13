@@ -1,16 +1,27 @@
 article {
     display: flex;
     margin: 1.5em 0px;
-    padding: 10px;
-    border-radius: 10px;
     overflow: hidden;
+    border-radius: 10px;
     > div {
         width: 100%;
         background-color: $footer-text-color;
-        border-radius: 10px;
+        padding: 20px;
         > div {
             display: flex;
             justify-content: space-between;
+            > p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 300px;
+                white-space: nowrap;
+            }
         }
+    }
+    > button {
+        background-color: $tertiary-color;
+        padding-left: 1.9rem;
+        padding-right: 1.9rem;
+        display: none;
     }
 }

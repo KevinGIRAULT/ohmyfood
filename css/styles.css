@@ -133,8 +133,8 @@ header {
 footer {
   background-color: #353535;
   color: white;
-  padding: 2em;
-  line-height: 2em;
+  padding: 3rem;
+  line-height: 3rem;
 }
 footer li:nth-child(-n+2) {
   font-weight: bold;
@@ -143,13 +143,13 @@ footer li:first-child::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f2e7";
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 footer li:nth-child(2)::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f4c4";
-  margin-right: 0.6em;
+  margin-right: 0.6rem;
 }
 
 .logo-container {
@@ -189,22 +189,36 @@ section.menu-container > .menu__heart-title {
 article {
   display: flex;
   margin: 1.5em 0px;
-  padding: 10px;
-  border-radius: 10px;
   overflow: hidden;
+  border-radius: 10px;
 }
 article > div {
   width: 100%;
   background-color: white;
-  border-radius: 10px;
+  padding: 20px;
 }
 article > div > div {
   display: flex;
   justify-content: space-between;
 }
+article > div > div > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  white-space: nowrap;
+}
+article > button {
+  background-color: #99E2D0;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  display: none;
+}
 
 .fa-check {
-  background-color: #99E2D0;
+  padding: 0.2em;
+  background-color: white;
+  border-radius: 2rem;
+  color: #99E2D0;
 }
 
 /*# sourceMappingURL=styles.css.map */
