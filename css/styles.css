@@ -208,10 +208,13 @@ article > div > div > p {
   white-space: nowrap;
 }
 article > button {
+  display: none;
+}
+article:hover button {
   background-color: #99E2D0;
   padding-left: 1.9rem;
   padding-right: 1.9rem;
-  display: none;
+  display: inline-block;
 }
 
 .fa-check {
