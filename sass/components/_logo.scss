@@ -3,10 +3,14 @@
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    > img {
-        // display: block;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
+    justify-content: center;
+    // > img {
+    //     // display: block;
+    //     object-fit: cover;
+    //     height: 100%;
+    //     width: 100%;
+    // }
+    p {
+        font-size: 3rem;
     }
 }
