@@ -111,7 +111,7 @@ body {
   border-bottom: 3px solid #99E2D0;
 }
 
-h1 {
+h1, h2, h3 {
   font-weight: bold;
 }
 
@@ -194,33 +194,33 @@ section.menu-container > .menu__heart-title {
   margin-bottom: 3rem;
 }
 
-article {
+.dish {
   display: flex;
   margin: 1.5em 0px;
   overflow: hidden;
   border-radius: 10px;
   display: in;
 }
-article > div {
+.dish > div {
   width: 100%;
   background-color: white;
   padding: 20px;
   overflow: hidden;
 }
-article > div > div {
+.dish > div > div {
   display: flex;
   justify-content: space-between;
 }
-article > div > div > p {
+.dish > div > div > p {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 300px;
   white-space: nowrap;
 }
-article > button {
+.dish > button {
   display: none;
 }
-article:hover > button {
+.dish:hover > button {
   background-color: #99E2D0;
   padding-left: 1.9rem;
   padding-right: 1.9rem;
