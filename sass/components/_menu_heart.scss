@@ -2,3 +2,11 @@
     font-size: 2.5rem;
     padding-right: 2rem;
 }
+
+.menu__heart:hover::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    transition: color .2s ease-in-out;
+    color: $tertiary-color;
+}

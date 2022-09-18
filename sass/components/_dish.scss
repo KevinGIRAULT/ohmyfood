@@ -3,10 +3,12 @@ article {
     margin: 1.5em 0px;
     overflow: hidden;
     border-radius: 10px;
+    display: in;
     > div {
         width: 100%;
         background-color: $footer-text-color;
         padding: 20px;
+        overflow: hidden;
         > div {
             display: flex;
             justify-content: space-between;
@@ -21,10 +23,21 @@ article {
     > button {
         display: none;
     }
-    &:hover button {
+    &:hover > button {
         background-color: $tertiary-color;
         padding-left: 1.9rem;
         padding-right: 1.9rem;
         display: inline-block;
+        animation: animButton 0.4s;
     }
 }
+
+@keyframes animButton {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+
+    }

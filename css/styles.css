@@ -169,6 +169,14 @@ footer li:nth-child(2)::before {
   padding-right: 2rem;
 }
 
+.menu__heart:hover::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f004";
+  transition: color 0.2s ease-in-out;
+  color: #99E2D0;
+}
+
 section.menu-container {
   background-color: #F6F6F6;
   padding: 30px 15px 70px;
@@ -191,11 +199,13 @@ article {
   margin: 1.5em 0px;
   overflow: hidden;
   border-radius: 10px;
+  display: in;
 }
 article > div {
   width: 100%;
   background-color: white;
   padding: 20px;
+  overflow: hidden;
 }
 article > div > div {
   display: flex;
@@ -210,18 +220,29 @@ article > div > div > p {
 article > button {
   display: none;
 }
-article:hover button {
+article:hover > button {
   background-color: #99E2D0;
   padding-left: 1.9rem;
   padding-right: 1.9rem;
   display: inline-block;
+  animation: animButton 0.4s;
 }
 
+@keyframes animButton {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 .fa-check {
   padding: 0.2em;
   background-color: white;
   border-radius: 2rem;
   color: #99E2D0;
 }
+
+@keyframes animCheck {}
 
 /*# sourceMappingURL=styles.css.map */
