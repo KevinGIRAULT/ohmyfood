@@ -34,10 +34,10 @@
 
 @keyframes animButton {
     from {
-        transform: translateY(50px);
+        transform: translateX(50px);
     }
     to {
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
 
     }

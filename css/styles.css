@@ -255,10 +255,10 @@ section.menu-container > .menu__ordering:hover {
 
 @keyframes animButton {
   from {
-    transform: translateY(50px);
+    transform: translateX(50px);
   }
   to {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 .fa-check {
@@ -266,8 +266,16 @@ section.menu-container > .menu__ordering:hover {
   background-color: white;
   border-radius: 2rem;
   color: #99E2D0;
+  animation: animCheck 0.5s;
 }
 
-@keyframes animCheck {}
+@keyframes animCheck {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
