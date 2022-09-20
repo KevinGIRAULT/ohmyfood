@@ -13,4 +13,15 @@ section.menu-container {
         align-items: center;
         margin-bottom: 3rem;
     }
+    > .menu__ordering {
+        padding: 1.5rem 5rem;
+        border-radius: 30px;
+        align-self: center;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient($primary-color, $secondary-color);
+        &:hover {
+            background: linear-gradient($primary-color, $secondary-color);
+        }
+    }
 }

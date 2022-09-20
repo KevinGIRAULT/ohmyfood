@@ -3,11 +3,10 @@
     margin: 1.5em 0px;
     overflow: hidden;
     border-radius: 10px;
-    display: in;
     > div {
         width: 100%;
         background-color: $footer-text-color;
-        padding: 20px;
+        padding: 15px 10px;
         overflow: hidden;
         > div {
             display: flex;
@@ -29,6 +28,7 @@
         padding-right: 1.9rem;
         display: inline-block;
         animation: animButton 0.4s;
+        cursor : pointer;
     }
 }
 

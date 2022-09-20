@@ -130,6 +130,18 @@ header {
   margin: 10px 20px;
 }
 
+main > form {
+  background-color: #eaeaea;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 1rem;
+}
+main > form::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: -3rem;
+}
 footer {
   background-color: #353535;
   color: white;
@@ -167,13 +179,12 @@ footer li:nth-child(2)::before {
   font-size: 2.5rem;
   padding-right: 2rem;
 }
-
 .menu__heart:hover::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f004";
-  transition: color 0.2s ease-in-out;
-  color: #99E2D0;
+  transition: color 0.9s ease-in-out;
+  color: #9356DC;
 }
 
 section.menu-container {
@@ -192,18 +203,28 @@ section.menu-container > .menu__heart-title {
   align-items: center;
   margin-bottom: 3rem;
 }
+section.menu-container > .menu__ordering {
+  padding: 1.5rem 5rem;
+  border-radius: 30px;
+  align-self: center;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+section.menu-container > .menu__ordering:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+}
 
 .dish {
   display: flex;
   margin: 1.5em 0px;
   overflow: hidden;
   border-radius: 10px;
-  display: in;
 }
 .dish > div {
   width: 100%;
   background-color: white;
-  padding: 20px;
+  padding: 15px 10px;
   overflow: hidden;
 }
 .dish > div > div {
@@ -225,6 +246,7 @@ section.menu-container > .menu__heart-title {
   padding-right: 1.9rem;
   display: inline-block;
   animation: animButton 0.4s;
+  cursor: pointer;
 }
 
 @keyframes animButton {

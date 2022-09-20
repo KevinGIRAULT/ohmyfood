@@ -1,0 +1,16 @@
+main {
+    > form {
+        background-color: #eaeaea;
+        text-align: center;
+        font-weight: bold;
+        padding: 1rem 1rem;
+        &::before {
+            content: "\f3c5";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-right: -3rem;
+        }
+        > input {
+        } 
+    }
+}
