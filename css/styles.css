@@ -183,8 +183,12 @@ footer li:nth-child(2)::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f004";
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  -webkit-text-fill-color: transparent;
   transition: color 0.9s ease-in-out;
-  color: #9356DC;
 }
 
 section.menu-container {

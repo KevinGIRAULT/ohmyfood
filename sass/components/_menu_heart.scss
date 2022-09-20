@@ -5,7 +5,11 @@
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         content: "\f004";
+        background-image: $gradient-color;
+        background-clip: text;
+        -webkit-background-clip: text; // for Chrome
+        font-weight: 900;
+        -webkit-text-fill-color: transparent;
         transition: color .9s ease-in-out;
-        color: $primary-color;
     }
 }
