@@ -213,10 +213,10 @@ section.menu-container > .menu__ordering {
   align-self: center;
   font-weight: bold;
   color: white;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 section.menu-container > .menu__ordering:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
+  filter: brightness(110%);
 }
 
 .dish {

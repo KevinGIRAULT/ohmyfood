@@ -19,9 +19,21 @@ section.menu-container {
         align-self: center;
         font-weight: bold;
         color: white;
-        background: linear-gradient($primary-color, $secondary-color);
+        background: $gradient1;
         &:hover {
-            background: linear-gradient($primary-color, $secondary-color);
+            filter: brightness(110%);
         }
     }
 }
+
+// .order1 {
+//     order: 1;
+// }
+
+// order2 {
+//     order: 2;
+// }
+
+// .order3 {
+//     order: 3;
+// }
