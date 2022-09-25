@@ -135,6 +135,7 @@ main > form {
   text-align: center;
   font-weight: bold;
   padding: 1rem 1rem;
+  box-shadow: inset 0px 6px 6px -6px #888;
 }
 main > form::before {
   content: "\f3c5";

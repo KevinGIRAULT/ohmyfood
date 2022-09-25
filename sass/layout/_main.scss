@@ -4,6 +4,7 @@ main {
         text-align: center;
         font-weight: bold;
         padding: 1rem 1rem;
+        box-shadow: inset 0px 6px 6px -6px #888;
         &::before {
             content: "\f3c5";
             font-family: "Font Awesome 6 Free";
