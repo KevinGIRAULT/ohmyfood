@@ -7,7 +7,7 @@ section.menu-container {
     margin-top: -54px;
     z-index: 1;
     position: relative;
-    >.menu__heart-title {
+    > .menu__heart-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -26,14 +26,33 @@ section.menu-container {
     }
 }
 
-// .order1 {
-//     order: 1;
-// }
+.delay1 {
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-name: delayArticle;
+    // animation-iteration-count: inherit;
+}
 
-// order2 {
-//     order: 2;
-// }
+.delay2 {
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-name: delayArticle;
+    // animation-iteration-count: inherit;
+}
 
-// .order3 {
-//     order: 3;
-// }
+.delay3 {
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-name: delayArticle;
+    // animation-iteration-count: inherit;
+}
+
+@keyframes delayArticle {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

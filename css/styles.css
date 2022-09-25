@@ -187,8 +187,8 @@ footer li:nth-child(2)::before {
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: 900;
-  -webkit-text-fill-color: transparent;
-  transition: color 0.9s ease-in-out;
+  color: transparent;
+  transition: 0.9s ease-in-out;
 }
 
 section.menu-container {
@@ -219,6 +219,32 @@ section.menu-container > .menu__ordering:hover {
   filter: brightness(110%);
 }
 
+.delay1 {
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-name: delayArticle;
+}
+
+.delay2 {
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-name: delayArticle;
+}
+
+.delay3 {
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-name: delayArticle;
+}
+
+@keyframes delayArticle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .dish {
   display: flex;
   margin: 1.5em 0px;
