@@ -143,6 +143,61 @@ main > form::before {
   font-weight: 900;
   margin-right: -3rem;
 }
+main .explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #F6F6F6;
+}
+main .explore h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+main .explore p {
+  text-align: center;
+  font-size: 1.85rem;
+  margin-bottom: 3rem;
+}
+main .explore button {
+  padding: 1.5rem 2rem;
+  border-radius: 30px;
+  align-self: center;
+  font-weight: 500;
+  font-size: medium;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+main .explore button:hover {
+  filter: brightness(110%);
+}
+main .works {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding: 4rem 2rem;
+}
+main .works li {
+  padding: 2.5rem 7.5rem;
+  border-radius: 15px;
+  align-text: center;
+  font-weight: 500;
+  font-size: medium;
+  background-color: #F6F6F6;
+  margin-top: 2rem;
+  box-shadow: 2px 4px 14px -5px #888;
+}
+main .works li:hover {
+  background-color: #F5EDFF;
+}
+main .restaurants {
+  padding: 7rem 2.5rem;
+  background-color: #F6F6F6;
+}
+
 footer {
   background-color: #353535;
   color: white;
