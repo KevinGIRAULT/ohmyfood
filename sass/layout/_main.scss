@@ -11,8 +11,8 @@ main {
             font-weight: 900;
             margin-right: -3rem;
         }
-        > input {
-        } 
+        // > input {
+        // }
     }
 
     .explore {
@@ -31,7 +31,7 @@ main {
         }
         p {
             text-align: center;
-            font-size : 1.85rem;
+            font-size: 1.85rem;
             margin-bottom: 3rem;
         }
         button {
@@ -45,32 +45,66 @@ main {
             &:hover {
                 filter: brightness(110%);
             }
-    
         }
     }
     .works {
-            font-size: 2.5rem;
-            font-weight: bolder;
-            padding: 4rem 2rem;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding: 4rem 2rem;
+        ol {
+            counter-reset: step;
             li {
-                padding: 2.5rem 7.5rem;
+                padding: 2.5rem 6.5rem 2.5rem 7.5rem;
                 border-radius: 15px;
-                align-text: center;
+                // align-text: center;
                 font-weight: 500;
                 font-size: medium;
                 background-color: $bg-color;
                 margin-top: 2rem;
+                margin-left: 1rem;
                 box-shadow: 2px 4px 14px -5px #888;
+                position: relative;
+                &::before {
+                    counter-increment: step;
+                    content: counter(step);
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    position: absolute;
+                    left: -1rem; // met le plus à gauche possible. Désactiver mettra par défaut sur l'élément
+                    border-radius: 50%;
+                    background-color: $primary-color;
+                    padding: 5px 8px;
+                    color: white;
+                    font-size: 1.1rem;
+
+                }
                 &:hover {
-                    background-color: #F5EDFF;
+                    background-color: #f5edff;
                 }
             }
-        
-
+        }
     }
     .restaurants {
-        
+        display: flex;
+        flex-direction: column;
         padding: 7rem 2.5rem;
         background-color: $bg-color;
+        gap: 2rem;
+        .restaurants__article {
+            background-color: $footer-text-color;
+            border-radius: 24px 24px 24px 24px;
+            .restaurants__image {
+                border-radius: 24px 24px 24px 24px;
+                img { // faire un calc radiusParent - padding
+                    border-radius: 24px 24px 24px 24px;
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            
+        }
     }
 }
+
+$radius : 24px;

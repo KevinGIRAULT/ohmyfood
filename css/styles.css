@@ -180,22 +180,55 @@ main .works {
   font-weight: bolder;
   padding: 4rem 2rem;
 }
-main .works li {
-  padding: 2.5rem 7.5rem;
+main .works ol {
+  counter-reset: step;
+}
+main .works ol li {
+  padding: 2.5rem 6.5rem 2.5rem 7.5rem;
   border-radius: 15px;
-  align-text: center;
   font-weight: 500;
   font-size: medium;
   background-color: #F6F6F6;
   margin-top: 2rem;
+  margin-left: 1rem;
   box-shadow: 2px 4px 14px -5px #888;
+  position: relative;
 }
-main .works li:hover {
-  background-color: #F5EDFF;
+main .works ol li::before {
+  counter-increment: step;
+  content: counter(step);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -1rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 5px 8px;
+  color: white;
+  font-size: 1.1rem;
+}
+main .works ol li:hover {
+  background-color: #f5edff;
 }
 main .restaurants {
+  display: flex;
+  flex-direction: column;
   padding: 7rem 2.5rem;
   background-color: #F6F6F6;
+  gap: 2rem;
+}
+main .restaurants .restaurants__article {
+  background-color: white;
+  border-radius: 24px 24px 24px 24px;
+}
+main .restaurants .restaurants__article .restaurants__image {
+  border-radius: 24px 24px 24px 24px;
+}
+main .restaurants .restaurants__article .restaurants__image img {
+  border-radius: 24px 24px 24px 24px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 footer {
@@ -283,7 +316,7 @@ section.menu-container > .menu__ordering:hover {
 
 .delay2 {
   animation-duration: 3s;
-  animation-delay: 0s;
+  animation-delay: 2s;
   animation-name: delayArticle;
 }
 
