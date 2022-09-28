@@ -143,109 +143,7 @@ main > form::before {
   font-weight: 900;
   margin-right: -3rem;
 }
-main .explore {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4rem 2rem;
-  background-color: #F6F6F6;
-}
-main .explore h1 {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  padding-right: 4rem;
-  padding-left: 4rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-main .explore p {
-  text-align: center;
-  font-size: 1.85rem;
-  margin-bottom: 3rem;
-}
-main .explore button {
-  padding: 1.5rem 2rem;
-  border-radius: 30px;
-  align-self: center;
-  font-weight: 500;
-  font-size: medium;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-}
-main .explore button:hover {
-  filter: brightness(110%);
-}
-main .works {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  padding: 4rem 2rem;
-}
-main .works ol {
-  counter-reset: step icone;
-}
-main .works ol li {
-  padding: 2.5rem 6.5rem 2.5rem 7.5rem;
-  border-radius: 15px;
-  font-weight: 500;
-  font-size: medium;
-  background-color: #F6F6F6;
-  margin-top: 2rem;
-  margin-left: 1rem;
-  box-shadow: 2px 4px 14px -5px #888;
-  position: relative;
-}
-main .works ol li::before {
-  content: counter(step);
-  counter-increment: step;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  position: absolute;
-  left: -1rem;
-  border-radius: 50%;
-  background-color: #9356DC;
-  padding: 5px 8px;
-  color: white;
-  font-size: 1.1rem;
-}
-main .works ol li::after {
-  content: counter(step, icone);
-  counter-increment: icone;
-  list-style: icone;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 3.5rem;
-  color: #808080;
-  font-size: 2rem;
-}
-main .works ol li:hover {
-  background-color: #f5edff;
-}
-main .restaurants {
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 2.5rem;
-  background-color: #F6F6F6;
-  gap: 2rem;
-}
-main .restaurants .restaurants__article {
-  background-color: white;
-  border-radius: 24px 24px 24px 24px;
-}
-main .restaurants .restaurants__article .restaurants__image {
-  border-radius: 24px 24px 24px 24px;
-}
-main .restaurants .restaurants__article .restaurants__image img {
-  border-radius: 24px 24px 24px 24px;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
 
-@counter-style icone {
-  system: additive;
-  additive-symbols: "\f54e" 3, "\f0ca" 2, "\f10b" 1;
-}
 footer {
   background-color: #353535;
   color: white;
@@ -406,6 +304,110 @@ section.menu-container > .menu__ordering:hover {
   to {
     transform: rotate(360deg);
   }
+}
+.works {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding: 4rem 2rem;
+}
+.works ol {
+  counter-reset: step icone;
+}
+.works ol li {
+  padding: 2.5rem 6.5rem 2.5rem 7.5rem;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: medium;
+  background-color: #F6F6F6;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  box-shadow: 2px 4px 14px -5px #888;
+  position: relative;
+}
+.works ol li::before {
+  content: counter(step);
+  counter-increment: step;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -1rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 5px 8px;
+  color: white;
+  font-size: 1.1rem;
+}
+.works ol li::after {
+  content: counter(step, icone);
+  counter-increment: icone;
+  list-style: icone;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 3.5rem;
+  color: #808080;
+  font-size: 2rem;
+}
+.works ol li:hover {
+  background-color: #f5edff;
+}
+
+@counter-style icone {
+  system: additive;
+  additive-symbols: "\f54e" 3, "\f0ca" 2, "\f3cd" 1;
+}
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 2.5rem;
+  background-color: #F6F6F6;
+  gap: 2rem;
+}
+.restaurants .restaurants__article {
+  background-color: white;
+  border-radius: 24px 24px 24px 24px;
+}
+.restaurants .restaurants__article .restaurants__image {
+  border-radius: 24px 24px 24px 24px;
+}
+.restaurants .restaurants__article .restaurants__image img {
+  border-radius: 24px 24px 24px 24px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #F6F6F6;
+}
+.explore h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.explore p {
+  text-align: center;
+  font-size: 1.85rem;
+  margin-bottom: 3rem;
+}
+.explore button {
+  padding: 1.5rem 2rem;
+  border-radius: 30px;
+  align-self: center;
+  font-weight: 500;
+  font-size: medium;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.explore button:hover {
+  filter: brightness(110%);
 }
 
 /*# sourceMappingURL=styles.css.map */

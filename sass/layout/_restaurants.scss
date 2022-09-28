@@ -1,0 +1,21 @@
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 2.5rem;
+    background-color: $bg-color;
+    gap: 2rem;
+    .restaurants__article {
+        background-color: $footer-text-color;
+        border-radius: 24px 24px 24px 24px;
+        .restaurants__image {
+            border-radius: 24px 24px 24px 24px;
+            img {
+                // faire un calc radiusParent - padding
+                border-radius: 24px 24px 24px 24px;
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
