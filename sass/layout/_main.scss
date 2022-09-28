@@ -64,6 +64,26 @@ main {
                 margin-left: 1rem;
                 box-shadow: 2px 4px 14px -5px #888;
                 position: relative;
+                // &::after {
+                //     position: absolute;
+                //     font-family: "Font Awesome 6 Free";
+                //     font-weight: 900;
+                //     content: "\f54e";
+                // }
+                > span {
+                    position: relative;
+                    &::before {
+                        // content: "\f54e";
+                        list-style: iconee;
+                        font-family: "Font Awesome 6 Free";
+                        font-weight: 900;
+                        position: absolute;
+                        border-radius: 50%;
+                        padding: 5px 8px;
+                        color: red;
+                        font-size: 1.1rem;
+                    }
+                }
                 &::before {
                     counter-increment: step;
                     content: counter(step);
@@ -76,7 +96,6 @@ main {
                     padding: 5px 8px;
                     color: white;
                     font-size: 1.1rem;
-
                 }
                 &:hover {
                     background-color: #f5edff;
@@ -95,16 +114,24 @@ main {
             border-radius: 24px 24px 24px 24px;
             .restaurants__image {
                 border-radius: 24px 24px 24px 24px;
-                img { // faire un calc radiusParent - padding
+                img {
+                    // faire un calc radiusParent - padding
                     border-radius: 24px 24px 24px 24px;
                     object-fit: cover;
                     height: 100%;
                     width: 100%;
                 }
             }
-            
         }
     }
 }
 
-$radius : 24px;
+$radius: 24px;
+
+// Ce qui suit ne fonctionne manifestement pas sur un pseudo-élément :
+@counter-style iconee {
+    system: additive;
+    additive-symbols: "\f0ca" 1;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
