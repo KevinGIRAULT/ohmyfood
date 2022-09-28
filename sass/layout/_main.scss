@@ -52,7 +52,7 @@ main {
         font-weight: bolder;
         padding: 4rem 2rem;
         ol {
-            counter-reset: step;
+            counter-reset: step icone;
             li {
                 padding: 2.5rem 6.5rem 2.5rem 7.5rem;
                 border-radius: 15px;
@@ -66,6 +66,7 @@ main {
                 position: relative;
                 &::before {
                     content: counter(step);
+                    counter-increment: (step);
                     font-family: "Font Awesome 6 Free";
                     font-weight: 900;
                     position: absolute;
@@ -78,7 +79,7 @@ main {
                 }
                 &::after {
                     content: counter(step, icone);
-                    counter-increment: step;
+                    counter-increment: icone;
                     list-style: icone;
                     font-family: "Font Awesome 6 Free";
                     font-weight: 900;
