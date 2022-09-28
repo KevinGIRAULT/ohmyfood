@@ -214,7 +214,9 @@ main .works ol li::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
-  left: 10rem;
+  left: 3.5rem;
+  color: #808080;
+  font-size: 2rem;
 }
 main .works ol li:hover {
   background-color: #f5edff;
@@ -242,7 +244,7 @@ main .restaurants .restaurants__article .restaurants__image img {
 
 @counter-style icone {
   system: additive;
-  additive-symbols: "\f10b" 3, "\f0ca" 2, "\f54e" 1;
+  additive-symbols: "\f54e" 3, "\f0ca" 2, "\f10b" 1;
 }
 footer {
   background-color: #353535;

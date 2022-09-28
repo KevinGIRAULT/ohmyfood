@@ -84,12 +84,9 @@ main {
                     font-family: "Font Awesome 6 Free";
                     font-weight: 900;
                     position: absolute;
-                    left: 10rem; // met le plus à gauche possible. Désactiver mettra par défaut sur l'élément
-                    // border-radius: 50%;
-                    // background-color: $primary-color;
-                    // padding: 5px 8px;
-                    // color: white;
-                    // font-size: 1.1rem;
+                    left: 3.5rem;
+                    color: #808080;
+                    font-size: 2rem;
                 }
                 &:hover {
                     background-color: #f5edff;
@@ -123,5 +120,5 @@ main {
 $radius: 24px;
 @counter-style icone {
     system: additive;
-    additive-symbols: "\f10b" 3, "\f0ca" 2, "\f54e" 1;
+    additive-symbols: "\f54e" 3, "\f0ca" 2, "\f10b" 1;
 }
