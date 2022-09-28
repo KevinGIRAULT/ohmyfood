@@ -194,21 +194,7 @@ main .works ol li {
   box-shadow: 2px 4px 14px -5px #888;
   position: relative;
 }
-main .works ol li > span {
-  position: relative;
-}
-main .works ol li > span::before {
-  list-style: iconee;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  position: absolute;
-  border-radius: 50%;
-  padding: 5px 8px;
-  color: red;
-  font-size: 1.1rem;
-}
 main .works ol li::before {
-  counter-increment: step;
   content: counter(step);
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -219,6 +205,15 @@ main .works ol li::before {
   padding: 5px 8px;
   color: white;
   font-size: 1.1rem;
+}
+main .works ol li::after {
+  content: counter(step, icone);
+  counter-increment: step;
+  list-style: icone;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 10rem;
 }
 main .works ol li:hover {
   background-color: #f5edff;
@@ -244,11 +239,9 @@ main .restaurants .restaurants__article .restaurants__image img {
   width: 100%;
 }
 
-@counter-style iconee {
+@counter-style icone {
   system: additive;
-  additive-symbols: "\f0ca" 1;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+  additive-symbols: "\f10b" 3, "\f0ca" 2, "\f54e" 1;
 }
 footer {
   background-color: #353535;
