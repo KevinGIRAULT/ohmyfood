@@ -8,8 +8,12 @@
         background-image: $gradient2;
         background-clip: text;
         -webkit-background-clip: text; // for Chrome
-        font-weight: 900;
         color: transparent;
         transition: .9s ease-in-out;
     }
+}
+
+.restaurants__bottom {
+    display: flex;
+    justify-content: space-between;
 }

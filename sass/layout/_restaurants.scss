@@ -5,13 +5,14 @@
     background-color: $bg-color;
     gap: 2rem;
     .restaurants__article {
-        background-color: $footer-text-color;
+        background-color: red;
+        // background-color: $footer-text-color;
         border-radius: 24px 24px 24px 24px;
         .restaurants__image {
-            border-radius: 24px 24px 24px 24px;
+            border-radius: 24px 24px 0 0;
+            height: 100px;
             img {
-                // faire un calc radiusParent - padding
-                border-radius: 24px 24px 24px 24px;
+                border-radius: 24px 24px 0 0;
                 object-fit: cover;
                 height: 100%;
                 width: 100%;
