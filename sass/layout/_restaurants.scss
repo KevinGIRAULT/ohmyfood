@@ -5,12 +5,22 @@
     background-color: $bg-color;
     gap: 2rem;
     .restaurants__article {
-        background-color: red;
+        background-color: $footer-text-color;
         // background-color: $footer-text-color;
         border-radius: 24px 24px 24px 24px;
+        width: 335px;
+        height: 251px;
+        .restaurants__bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem;
+            height: 30.68%; //77px;
+            width: 335px;
+        }
         .restaurants__image {
+            height: 69.32%; //174px;
+            width: 335px;
             border-radius: 24px 24px 0 0;
-            height: 100px;
             img {
                 border-radius: 24px 24px 0 0;
                 object-fit: cover;
@@ -20,3 +30,4 @@
         }
     }
 }
+

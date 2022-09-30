@@ -177,11 +177,11 @@ footer li:nth-child(2)::before {
   font-size: 3rem;
 }
 
-.menu__heart {
+.heart {
   font-size: 2.5rem;
   padding-right: 2rem;
 }
-.menu__heart:hover::before {
+.heart:hover::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f004";
@@ -190,11 +190,6 @@ footer li:nth-child(2)::before {
   -webkit-background-clip: text;
   color: transparent;
   transition: 0.9s ease-in-out;
-}
-
-.restaurants__bottom {
-  display: flex;
-  justify-content: space-between;
 }
 
 section.menu-container {
@@ -368,12 +363,22 @@ section.menu-container > .menu__ordering:hover {
   gap: 2rem;
 }
 .restaurants .restaurants__article {
-  background-color: red;
+  background-color: white;
   border-radius: 24px 24px 24px 24px;
+  width: 335px;
+  height: 251px;
+}
+.restaurants .restaurants__article .restaurants__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: 30.68%;
+  width: 335px;
 }
 .restaurants .restaurants__article .restaurants__image {
+  height: 69.32%;
+  width: 335px;
   border-radius: 24px 24px 0 0;
-  height: 100px;
 }
 .restaurants .restaurants__article .restaurants__image img {
   border-radius: 24px 24px 0 0;

@@ -1,4 +1,4 @@
-.menu__heart {
+.heart {
     font-size: 2.5rem;
     padding-right: 2rem;
     &:hover::before {
@@ -11,9 +11,4 @@
         color: transparent;
         transition: .9s ease-in-out;
     }
-}
-
-.restaurants__bottom {
-    display: flex;
-    justify-content: space-between;
 }
