@@ -1,0 +1,13 @@
+@mixin buttons-light {
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
+    align-self: center;
+    font-weight: 500;
+    font-size: medium;
+    color: white;
+    background: $gradient1;
+    &:hover {
+        filter: brightness(110%);
+        box-shadow: 5px 5px 5px black;
+    }
+}

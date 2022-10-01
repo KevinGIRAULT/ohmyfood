@@ -1,16 +1,25 @@
-@import 'base/_reset';
+// les extensions fichiers et les underscores initiaux doivent être omis.
+
+// BASE
+@import 'base/reset';
 @import 'base/typography';
-@import 'pages/home';
-@import 'layout/_header';
-@import 'layout/_main';
-@import 'layout/_footer';
+
+// LAYOUT
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 @import 'layout/navigation';
-@import 'components/_logo';
-@import 'components/_backspace';
-@import 'components/_heart';
-@import 'layout/_menu';
-@import 'components/_dish';
-@import 'components/_check';
+@import 'layout/menu';
 @import 'layout/works';
 @import 'layout/restaurants';
 @import 'layout/explore';
+
+// COMPONENTS
+@import 'components/logo';
+@import 'components/backspace';
+@import 'components/heart';
+@import 'components/dish';
+@import 'components/check';
+
+// PAGES
+@import 'pages/home';

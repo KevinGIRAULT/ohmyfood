@@ -166,32 +166,6 @@ footer li:nth-child(2)::before {
   margin-right: 0.6rem;
 }
 
-.logo-container {
-  width: 150px;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
-}
-.logo-container p {
-  font-size: 3rem;
-}
-
-.heart {
-  font-size: 2.5rem;
-  padding-right: 2rem;
-}
-.heart:hover::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  content: "\f004";
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: 0.9s ease-in-out;
-}
-
 section.menu-container {
   background-color: #F6F6F6;
   padding: 30px 15px 70px;
@@ -209,15 +183,17 @@ section.menu-container > .menu__heart-title {
   margin-bottom: 3rem;
 }
 section.menu-container > .menu__ordering {
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 2rem;
   border-radius: 30px;
   align-self: center;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: medium;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
 }
 section.menu-container > .menu__ordering:hover {
   filter: brightness(110%);
+  box-shadow: 5px 5px 5px black;
 }
 
 .delay1 {
@@ -244,64 +220,6 @@ section.menu-container > .menu__ordering:hover {
   }
   to {
     opacity: 1;
-  }
-}
-.dish {
-  display: flex;
-  margin: 1.5em 0px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.dish > div {
-  width: 100%;
-  background-color: white;
-  padding: 15px 10px;
-  overflow: hidden;
-}
-.dish > div > div {
-  display: flex;
-  justify-content: space-between;
-}
-.dish > div > div > p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 300px;
-  white-space: nowrap;
-}
-.dish > button {
-  display: none;
-}
-.dish:hover > button {
-  background-color: #99E2D0;
-  padding-left: 1.9rem;
-  padding-right: 1.9rem;
-  display: inline-block;
-  animation: animButton 0.4s;
-  cursor: pointer;
-}
-
-@keyframes animButton {
-  from {
-    transform: translateX(50px);
-  }
-  to {
-    transform: translateX(0px);
-  }
-}
-.fa-check {
-  padding: 0.2em;
-  background-color: white;
-  border-radius: 2rem;
-  color: #99E2D0;
-  animation: animCheck 0.5s;
-}
-
-@keyframes animCheck {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 .works {
@@ -418,6 +336,91 @@ section.menu-container > .menu__ordering:hover {
 }
 .explore button:hover {
   filter: brightness(110%);
+  box-shadow: 5px 5px 5px black;
+}
+
+.logo-container {
+  width: 150px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+.logo-container p {
+  font-size: 3rem;
+}
+
+.heart {
+  font-size: 2.5rem;
+  padding-right: 2rem;
+}
+.heart:hover::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f004";
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.dish {
+  display: flex;
+  margin: 1.5em 0px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.dish > div {
+  width: 100%;
+  background-color: white;
+  padding: 15px 10px;
+  overflow: hidden;
+}
+.dish > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+.dish > div > div > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  white-space: nowrap;
+}
+.dish > button {
+  display: none;
+}
+.dish:hover > button {
+  background-color: #99E2D0;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  display: inline-block;
+  animation: animButton 0.4s;
+  cursor: pointer;
+}
+
+@keyframes animButton {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.fa-check {
+  padding: 0.2em;
+  background-color: white;
+  border-radius: 2rem;
+  color: #99E2D0;
+  animation: animCheck 0.5s;
+}
+
+@keyframes animCheck {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

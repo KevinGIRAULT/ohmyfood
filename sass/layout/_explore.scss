@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+
 .explore {
     display: flex;
     flex-direction: column;
@@ -18,15 +20,6 @@
         margin-bottom: 3rem;
     }
     button {
-        padding: 1.5rem 2rem;
-        border-radius: 30px;
-        align-self: center;
-        font-weight: 500;
-        font-size: medium;
-        color: white;
-        background: $gradient1;
-        &:hover {
-            filter: brightness(110%);
-        }
+        @include buttons-light;
     }
 }
