@@ -279,7 +279,7 @@ section.menu-container > .menu__ordering:hover {
 .restaurants {
   display: flex;
   flex-direction: column;
-  padding: 7rem 2.5rem;
+  padding: 7rem 2rem;
   background-color: #F6F6F6;
   gap: 2rem;
 }
@@ -291,6 +291,7 @@ section.menu-container > .menu__ordering:hover {
   cursor: pointer;
   box-shadow: 0px 0px 15px -5px;
   position: relative;
+  aspect-ratio: 9/7;
 }
 .restaurants .restaurants__article .new {
   position: absolute;
@@ -378,6 +379,7 @@ section.menu-container > .menu__ordering:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  transition: 0.9s ease-in-out;
   cursor: pointer;
 }
 
