@@ -1,4 +1,4 @@
-@import '../abstracts/mixins';
+@import "../abstracts/mixins";
 
 section.menu-container {
     background-color: $bg-color;
@@ -21,24 +21,23 @@ section.menu-container {
 }
 
 .delay1 {
-    animation-duration: 2s;
-    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-delay: 0;
     animation-name: delayArticle;
-    // animation-iteration-count: inherit;
+    animation-iteration-count: 1;
 }
 
 .delay2 {
-    animation-duration: 3s;
-    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
     animation-name: delayArticle;
-    // animation-iteration-count: inherit;
-}
+    animation-iteration-count: 1;}
 
 .delay3 {
-    animation-duration: 3s;
-    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
     animation-name: delayArticle;
-    // animation-iteration-count: inherit;
+    animation-iteration-count: 1;
 }
 
 @keyframes delayArticle {

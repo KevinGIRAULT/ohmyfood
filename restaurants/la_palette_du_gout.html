@@ -1,67 +1,177 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La palette du goût</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <title>À la française - Ohmyfood</title>
+    </head>
+    <body>
+        <header role="banner"> <!-- voir ici pour l'ajout du rôle banner : https://www.accede-web.com/notices/html-et-css/structure-generale/structurer-la-zone-dentete-principale-avec-header-rolebanner/-->
+            <a
+                href="../index.html"
+                title="Retour l'accueil"
+                class="fa-solid fa-arrow-left"
+            ></a>
+            <div class="logo-container">
+                <p>ohmyfood</p>
+            </div>
+        </header>
 
-    <main>
+        <main>
+            <div>
+                <img
+                    src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt=""
+                />
+            </div>
+            <section class="menu-container">
+                <div class="menu__heart-title">
+                    <h1 class="menu__title">À la française</h1>
+                    <span class="fa-regular fa-heart heart"></span>
+                </div>
+                <section class="menu-part delay1">
+                    <h2 class="menu-part__title">Entrées</h2>
 
-        La palette du goût
+                    <article class="dish">
+                        <div>
+                            <h3>Tartare de poulpe acidulé</h3>
+                            <div class="whatName">
+                                <p>Aux zestes d'orange</p>
+                                <span class="price">25€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
 
-Entrées
-Fricassée d'escargot
-Au piment d'Espelette 
-25€
+                    <article class="dish">
+                        <div>
+                            <h3>Velouté de légumes d'antan</h3>
+                            <div class="whatName">
+                                <p>Carotte, panais, topinambour</p>
+                                <span class="price">35€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
 
-Foie gras de canard mi-cuit
-Et ses copeaux de truffe noire
-35€
+                    <article class="dish">
+                        <div>
+                            <h3>Soupe à l'oignon</h3>
+                            <div class="whatName">
+                                <p>Revisitée</p>
+                                <span class="price">20€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
+                </section>
 
-Oeuf au plat
-Assaisonné à la truffe sur lit de caviar
-20€
+                <section class="menu-part delay2">
+                    <h2 class="menu-part__title">Plats</h2>
+                    <article class="dish">
+                        <div>
+                            <h3>Coquilles Saint-Jacques</h3>
+                            <div class="whatName">
+                                <p>Accompagnées d'une purée de panais</p>
+                                <span class="price">40€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
 
+                    <article class="dish">
+                        <div>
+                            <h3>Magret de canard</h3>
+                            <div class="whatName">
+                                <p>Et parmentier de pommes de terre</p>
+                                <span class="price">35€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
 
-Plats
-Filet de boeuf aux herbes
-Accompagné de sa ribambelle de légumes
-40€
+                    <article class="dish">
+                        <div>
+                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                            <div class="whatName">
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                                <span class="price">44€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
+                </section>
+                <section class="menu-part delay3">
+                    <h2 class="menu-part__title">Desserts</h2>
+                    <article class="dish">
+                        <div>
+                            <h3>Pétales de violettes glacés</h3>
+                            <div class="whatName">
+                                <p>Et purée de noisettes</p>
+                                <span class="price">18€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
 
-Parmentier de queue de boeuf
-À la truffe noire sur sa purée de panais
-35€
+                    <article class="dish">
+                        <div>
+                            <h3>Fondant au chocolat</h3>
+                            <div class="whatName">
+                                <p>Revisité</p>
+                                <span class="price">22€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
 
-Filet de turbot
-Aux agrumes
-44€
-        
-Desserts
-Paris-Brest
-Revisité
-18€
+                    <article class="dish">
+                        <div>
+                            <h3>Millefeuille croustillant</h3>
+                            <div class="whatName">
+                                <p>Myrtilles et pâte d’amande</p>
+                                <span class="price">23€</span>
+                            </div>
+                        </div>
+                        <button class="dish__button">
+                            <span class="fa-solid fa-check"></span>
+                        </button>
+                    </article>
+                </section>
+                <button class="menu__ordering">Commander</button>
+            </section>
+        </main>
 
-Macaron au chocolat d'exception 
-Et glace à la vanille de Madagascar
-22€
-
-Mousse au chocolat 
-Au piment d'Espelette et à la truffe noire
-23€  
-
-    </main>
-
-    <footer>
-        <p></p>
-        <ul>
-            <li>Proposer un restaurant</li>
-            <li>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
-        </ul>
-    </footer>
-</body>
+        <footer>
+            <p>Ohmyfood</p>
+            <ul>
+                <li>Proposer un restaurant</li>
+                <li>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+    </body>
 </html>

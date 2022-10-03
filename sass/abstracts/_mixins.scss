@@ -11,3 +11,23 @@
         box-shadow: 5px 5px 5px black;
     }
 }
+
+@mixin delay {
+    .delay1 {
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-name: delayArticle;
+    }
+    
+    .delay2 {
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-name: delayArticle;
+    }
+    
+    .delay3 {
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-name: delayArticle;
+    }
+}

@@ -197,21 +197,24 @@ section.menu-container > .menu__ordering:hover {
 }
 
 .delay1 {
-  animation-duration: 2s;
-  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-delay: 0;
   animation-name: delayArticle;
+  animation-iteration-count: 1;
 }
 
 .delay2 {
-  animation-duration: 3s;
-  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
   animation-name: delayArticle;
+  animation-iteration-count: 1;
 }
 
 .delay3 {
-  animation-duration: 3s;
-  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
   animation-name: delayArticle;
+  animation-iteration-count: 1;
 }
 
 @keyframes delayArticle {
@@ -285,6 +288,19 @@ section.menu-container > .menu__ordering:hover {
   border-radius: 24px 24px 24px 24px;
   width: 335px;
   height: 251px;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px -5px;
+  position: relative;
+}
+.restaurants .restaurants__article .new {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #008766;
+  right: 14px;
+  top: 14px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 500;
 }
 .restaurants .restaurants__article .restaurants__bottom {
   display: flex;
@@ -362,6 +378,7 @@ section.menu-container > .menu__ordering:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  cursor: pointer;
 }
 
 .dish {
