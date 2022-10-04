@@ -372,12 +372,10 @@ section.menu-container > .menu__ordering:hover {
   font-size: 2.5rem;
   font-weight: 400;
 }
-
 .heart::before {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-
 .heart::after {
   position: absolute;
   left: 0;
@@ -391,11 +389,9 @@ section.menu-container > .menu__ordering:hover {
   opacity: 0;
   cursor: pointer;
 }
-
 .heart:hover::before {
   opacity: 0;
 }
-
 .heart:hover::after {
   opacity: 1;
 }
