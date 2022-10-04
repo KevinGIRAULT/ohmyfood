@@ -370,6 +370,7 @@ section.menu-container > .menu__ordering:hover {
 .heart {
   position: relative;
   font-size: 2.5rem;
+  padding-right: 2rem;
   font-weight: 400;
 }
 .heart::before {
