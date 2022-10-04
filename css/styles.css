@@ -368,19 +368,36 @@ section.menu-container > .menu__ordering:hover {
 }
 
 .heart {
+  position: relative;
   font-size: 2.5rem;
-  padding-right: 2rem;
+  font-weight: 400;
 }
-.heart:hover::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+
+.heart::before {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.heart::after {
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease-in-out;
   content: "\f004";
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: linear-gradient(#9356DC, #FF79DA) !important;
+  font-weight: 600;
+  color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
-  transition: 0.9s ease-in-out;
+  opacity: 0;
   cursor: pointer;
+}
+
+.heart:hover::before {
+  opacity: 0;
+}
+
+.heart:hover::after {
+  opacity: 1;
 }
 
 .dish {
