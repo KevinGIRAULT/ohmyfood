@@ -420,6 +420,9 @@ section.menu-container > .menu__ordering:hover {
   white-space: nowrap;
 }
 .dish > button {
+  transition: 0.6s ease-in-out;
+}
+.dish > button > .fa-check {
   display: none;
 }
 .dish:hover > button {
@@ -427,8 +430,11 @@ section.menu-container > .menu__ordering:hover {
   padding-left: 1.9rem;
   padding-right: 1.9rem;
   display: inline-block;
-  animation: animButton 0.4s;
+  transform: translateX(0px);
   cursor: pointer;
+}
+.dish:hover > button > .fa-check {
+  display: inline-block;
 }
 
 @keyframes animButton {

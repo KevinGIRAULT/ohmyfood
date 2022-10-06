@@ -20,15 +20,21 @@
         }
     }
     > button {
-        display: none;
+        transition: 0.6s ease-in-out;
+        > .fa-check {
+            display: none;
+        }
     }
     &:hover > button {
         background-color: $tertiary-color;
         padding-left: 1.9rem;
         padding-right: 1.9rem;
         display: inline-block;
-        animation: animButton 0.4s;
-        cursor : pointer;
+        transform: translateX(0px);
+        cursor: pointer;
+        > .fa-check {
+            display: inline-block;
+        }
     }
 }
 
@@ -39,5 +45,4 @@
     to {
         transform: translateX(0px);
     }
-
-    }
+}
