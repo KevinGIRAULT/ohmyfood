@@ -21,24 +21,27 @@ section.menu-container {
 }
 
 .delay1 {
-    animation-duration: 3s;
-    animation-delay: 0ms;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 1s;
     animation-name: delayArticle;
-    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .delay2 {
-    animation-duration: 4s;
-    animation-delay: 0ms;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 2s;
     animation-name: delayArticle;
-    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .delay3 {
-    animation-duration: 5s;
-    animation-delay: 0ms;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 3s;
     animation-name: delayArticle;
-    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes delayArticle {
