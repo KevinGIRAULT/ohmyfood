@@ -235,8 +235,13 @@ section.menu-container > .menu__ordering:hover {
 }
 .works ol {
   counter-reset: step;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .works ol li {
+  min-width: 325px;
+  flex: 1 1 auto;
   padding: 2.5rem 6.5rem 2.5rem 7.5rem;
   border-radius: 15px;
   font-weight: 500;
@@ -281,10 +286,20 @@ section.menu-container > .menu__ordering:hover {
 }
 .restaurants {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 7rem 2rem;
   background-color: #F6F6F6;
   gap: 2rem;
+}
+.restaurants h2 {
+  font-size: 2.5rem;
+  width: 100%;
+}
+.restaurants .restaurants__link {
+  flex: 1 1 auto;
+  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 .restaurants .restaurants__article {
   background-color: white;
@@ -296,7 +311,7 @@ section.menu-container > .menu__ordering:hover {
   position: relative;
   aspect-ratio: 9/7;
 }
-.restaurants .restaurants__article .new {
+.restaurants .restaurants__article .new-tag {
   position: absolute;
   background-color: #99e2d0;
   color: #008766;
