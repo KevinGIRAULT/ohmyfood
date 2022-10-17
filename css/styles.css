@@ -375,17 +375,17 @@ section.menu-container > .menu__ordering:hover {
 }
 
 .loader {
-  z-index: 10;
-  background-color: black;
+  z-index: 99;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: hsla(50deg, 33%, 25%, 0.95); /* 75% opaque, i.e. 25% transparent */
+  background-color: rgba(73, 43, 85, 0.95);
+  animation: cssAnimation 1s 2s forwards;
 }
 .loader .loader__logo {
   position: absolute;
-  top: 30%;
-  left: 45%;
+  top: 30vh;
+  left: 40vw;
   font-size: xx-large;
   animation: rotation 0.5s backwards infinite;
   background-image: linear-gradient(to left, #9356DC, #FF79DA, #99E2D0);
@@ -399,6 +399,13 @@ section.menu-container > .menu__ordering:hover {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
 }
 .logo-container {
