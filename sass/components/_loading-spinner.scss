@@ -1,67 +1,14 @@
-// .loading-spinner {
-//     width: 100%;
-//     height: 10%;
-//     display: block;
-//     justify-content: center;
-//     align-items: center;
-//     font-size: 2rem;
-//     overflow: hidden;
-//     position: fixed;
-//     animation: text-color 2s ease-in-out infinite alternate;
-//     &__sector {
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//         border-radius: 50%;
-//         border: 15px solid transparent;
-//         mix-blend-mode: overlay;
-//         animation: rotate var(--duration) var(--timing) infinite;
-//         pointer-events: none;
-//         &--red {
-//             border-top-color: lightcoral;
-//             --duration: 1.5s;
-//             --timing: ease-in-out;
-//         }
-
-//         &--blue {
-//             border-left-color: lightblue;
-//             --duration: 2s;
-//             --timing: ease-in;
-//         }
-
-//         &--green {
-//             border-right-color: lightgreen;
-//             --duration: 2.5s;
-//             --timing: ease-out;
-//         }
-//     }
-// }
-
-// @keyframes rotate {
-//     0% {
-//         transform: rotate(0);
-//     }
-
-//     100% {
-//         transform: rotate(360deg);
-//     }
-// }
-
-// @keyframes text-color {
-//     0% {
-//         color: rgba(0, 0, 0, 1);
-//     }
-
-//     50% {
-//         color: rgba(0, 0, 0, 0.5);
-//     }
-
-//     100% {
-//         color: rgba(0, 0, 0, 0.1);
-//     }
-// }
-
 .loader {
+    .loader__logo {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        font-size: xx-large;
+        animation: rotation 0.5s backwards infinite;
+        background-image: linear-gradient(to left, $primary-color, $secondary-color, $tertiary-color);
+        background-clip: text;
+        color: transparent;
+    }
     z-index: 10;
     background-color: black;
     position: fixed;
@@ -71,6 +18,15 @@
         50,
         33%,
         25%,
-        0.75
+        0.95
     ); /* 75% opaque, i.e. 25% transparent */
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

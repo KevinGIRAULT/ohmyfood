@@ -119,7 +119,7 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-footer > p, .logo-container > p {
+footer > p, .logo-container > p, .loader__logo {
   font-family: shrikhand;
 }
 
@@ -380,9 +380,27 @@ section.menu-container > .menu__ordering:hover {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: hsla(50deg, 33%, 25%, 0.75); /* 75% opaque, i.e. 25% transparent */
+  background-color: hsla(50deg, 33%, 25%, 0.95); /* 75% opaque, i.e. 25% transparent */
+}
+.loader .loader__logo {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: xx-large;
+  animation: rotation 0.5s backwards infinite;
+  background-image: linear-gradient(to left, #9356DC, #FF79DA, #99E2D0);
+  background-clip: text;
+  color: transparent;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .logo-container {
   width: 150px;
   display: flex;
