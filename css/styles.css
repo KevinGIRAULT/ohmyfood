@@ -242,6 +242,7 @@ section.menu-container > .menu__ordering:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 2%;
 }
 .works ol li {
   min-width: 325px;
