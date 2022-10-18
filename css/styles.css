@@ -256,6 +256,9 @@ section.menu-container > .menu__ordering:hover {
   box-shadow: 2px 4px 14px -5px #888;
   position: relative;
 }
+.works ol li:hover {
+  background-color: #f5edff;
+}
 .works ol li::before {
   content: counter(step);
   counter-increment: step;
@@ -280,8 +283,8 @@ section.menu-container > .menu__ordering:hover {
   color: #808080;
   font-size: 2rem;
 }
-.works ol li:hover {
-  background-color: #f5edff;
+.works ol li:hover::after {
+  color: #9356DC;
 }
 
 @counter-style icone {

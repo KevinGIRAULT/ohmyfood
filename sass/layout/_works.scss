@@ -8,6 +8,9 @@
         justify-content: center;
         flex-wrap: wrap;
         li {
+            &:hover {
+                background-color: #f5edff;
+            }
             min-width: 325px;
             flex: 1 1 auto;
             padding: 2.5rem 6.5rem 2.5rem 7.5rem;
@@ -44,8 +47,8 @@
                 color: #808080;
                 font-size: 2rem;
             }
-            &:hover {
-                background-color: #f5edff;
+            &:hover::after {
+                color: $primary-color;
             }
         }
     }
@@ -60,3 +63,7 @@
     system: additive;
     additive-symbols: "\f54e"3, "\f0ca"2, "\f3cd"1;
 }
+
+// .works li:hover::after {
+//     color: $primary-color;
+// }
