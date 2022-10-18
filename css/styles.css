@@ -174,17 +174,19 @@ section.menu-container {
   background-color: #F6F6F6;
   padding: 30px 15px 70px;
   display: flex;
-  flex-direction: column;
   border-radius: 49px 49px 0 0;
   margin-top: -54px;
   z-index: 1;
   position: relative;
+  flex-wrap: wrap;
+  gap: 10%;
 }
 section.menu-container > .menu__heart-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
+  width: 100%;
 }
 section.menu-container > .menu__ordering {
   padding: 1.5rem 2rem;
@@ -194,6 +196,8 @@ section.menu-container > .menu__ordering {
   font-size: medium;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
+  width: 100%;
+  text-align: center;
 }
 section.menu-container > .menu__ordering:hover {
   filter: brightness(110%);
@@ -232,6 +236,11 @@ section.menu-container > .menu__ordering:hover {
     opacity: 1;
   }
 }
+.menu-part {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
 .works {
   font-size: 2.5rem;
   font-weight: bolder;
