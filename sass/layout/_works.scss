@@ -54,16 +54,7 @@
     }
 }
 
-// @counter-style icone {
-//     system: fixed;
-//     symbols: "\f3cd""\f0ca" "\f54e";
-// }
-
 @counter-style icone {
     system: additive;
     additive-symbols: "\f54e"3, "\f0ca"2, "\f3cd"1;
 }
-
-// .works li:hover::after {
-//     color: $primary-color;
-// }

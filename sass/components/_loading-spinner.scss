@@ -6,10 +6,11 @@
     background-color: rgba(73, 43, 85, 0.95);
     animation: cssAnimation 1s 2s forwards;
     margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .loader__logo {
         position: absolute;
-        top: 30vh;
-        left: 40vw;
         font-size: xx-large;
         animation: rotation 0.5s backwards infinite;
         background-image: linear-gradient(
