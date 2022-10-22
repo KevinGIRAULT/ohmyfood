@@ -1,8 +1,10 @@
 .heart {
-  position: relative;
+  position: absolute;
   font-size: 2.5rem;
   padding-right: 2rem;
   font-weight: 400;
+  bottom: 37px;
+  right: 10px;
   &::before {
     transition: 0.3s ease-in-out;
     cursor: pointer;
